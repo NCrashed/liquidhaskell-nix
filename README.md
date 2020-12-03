@@ -4,7 +4,7 @@ This is auxiliary scripts that helps you to integrate [Liquid Haskell](https://u
 
 # Usage
 
-See example at [liquidhaskell-test](https://github.com/liquidhaskell-test).
+See example at [liquid-test](https://github.com/NCrashed/liquid-test).
 
 The project provides you overlay with liquid haskell packages and script helpers:
 ``` nix

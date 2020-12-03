@@ -26,12 +26,16 @@ in { /* .... */ }
 
 The overlay contains two helpers. First, tool that adds `z3` solver as additional dependency to your package as liquid haskell plugin needs it:
 ``` nix
-mypkg = pkgs.addLiquidSolver super.mypkg;
+{
+  mypkg = pkgs.addLiquidSolver super.mypkg;
+}
 ```
 
 The second, helper that defines `configureFlags` env for shell as `z3` need to be found by plugin when you call cabal in shell:
 ``` nix
-shellHook = ''
-  ${pkgs.addLiquidSolverHook}
-'';
+{
+  shellHook = ''
+    ${pkgs.addLiquidSolverHook}
+  '';
+}
 ```

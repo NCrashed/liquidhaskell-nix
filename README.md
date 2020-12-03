@@ -18,8 +18,8 @@ let nixpkgs = import <nixpkgs> {
     liquidOverlay = nixpkgs.fetchFromGitHub {
       owner = "NCrashed";
       repo = "liquidhaskell-nix";
-      rev = "4f0f5d978f2c65f0e7115fadeaa298044c03c679";
-      sha256  = "05lz51gqskxzwyw7r1v1dqkzp26g9bmbsqka8f4p2nm1c4yd05rv";
+      rev = "417fe0fc17ab93b5fec43151511c7400f96afb18";
+      sha256  = "1j9p6f9nyk0ynyvv92j71gbxz1c3ks2wy15pxrc1k5iicpssgjq0";
     };
 in { /* .... */ }
 ```

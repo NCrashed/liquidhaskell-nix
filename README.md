@@ -14,7 +14,7 @@ let nixpkgs = import <nixpkgs> {
           (import liquidOverlay {})
         ];
       };
-    }
+    };
     liquidOverlay = nixpkgs.fetchFromGitHub {
       owner = "NCrashed";
       repo = "liquidhaskell-nix";
